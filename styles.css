@@ -1,6 +1,6 @@
 @font-face {
     font-family: "norse-bold";
-    src: url(font/Norse-Bold.otf) format('otf');
+    src: url(font/Norse-Bold.otf);
 }
 
 /* Box sizing rules */
@@ -54,7 +54,7 @@ header {
     color: whitesmoke;
     display: flex;
     flex-direction: column;
-    flex-basis: 25rem;
+    flex-basis: 35rem;
     flex-grow: 1;
     align-items: center;
     justify-content: space-between;
@@ -71,5 +71,14 @@ main > * {
     max-width: 60rem;
 }
 
+.logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    font-family: "norse-bold";
+    font-size: 6rem;
+}
 
-
+.logo {
+    height: 100px;
+}
