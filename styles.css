@@ -98,6 +98,10 @@ main > * {
     margin-bottom: 2em;
 }
 
+.img-source a{
+  color: whitesmoke;
+}
+
 .top-content {
     font-weight: 600;
     margin-bottom: 2em;
@@ -118,13 +122,14 @@ p {
 
 form {
     margin-bottom: 1em;
-    font-size: 1rem;
 }
 
 input {
-  width: 300px;
+  width: 250px;
   border: 1px solid hsla(0, 0%, 0%, 0.30);
-  border-radius: 5px;
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 1rem;
 }
 
 label {
@@ -161,11 +166,11 @@ span {
 
 button {
   background-color: #596D48;
-  padding: 1em 2em;
-  font-weight: 600;
+  padding: 1em 4em;
+  font-weight: 900;
   font-size: 1rem;
   color: white;
-  border-radius: 1em;
+  border-radius: 8px;
   border: none;
   box-shadow: 2px 5px 4px 4px hsla(0, 0%, 0%, 0.10);
   cursor: pointer;
@@ -175,4 +180,9 @@ button {
 .bottom-content {
   padding: 1em 48px;
   font-size: 1rem;
+}
+
+.bottom-content a{
+  color: #596D48;
+  
 }
