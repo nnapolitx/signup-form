@@ -106,7 +106,7 @@ main > * {
 }
 
 legend {
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.5rem;
 
 }
@@ -125,10 +125,8 @@ input {
 }
 
 label {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-weight: 600;
-  font-size: .75rem;
+  letter-spacing: 1px;
+  font-size: .7rem;
 }
 
 form p {
@@ -139,14 +137,14 @@ form p {
 p span {
   display: flex;
   flex-direction: column;
-  max-width: 550px;
+  max-width: 400px;
   flex-shrink: 1;
   flex-grow: 1;
   flex-basis: 330px;
 }
 
 span {
-  margin-top: 1.5em;
+  margin-top: 5px;
 }
 
 .shadow {
