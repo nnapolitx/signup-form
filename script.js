@@ -1,5 +1,5 @@
 const passwordErrorMessage = document.querySelector('.unmatched-pword');
-const errorInputBorder = document.querySelectorAll('.error');
+const errColor = document.querySelectorAll('.error');
 const pword1 = document.querySelector('#pword');
 const pword2 = document.querySelector('#confirm');
 
@@ -27,21 +27,26 @@ function sendErrorMsg () {
 
     else if (matchPwords() == false) {
         passwordErrorMessage.textContent = 'Passwords do not match';
+        errColor.forEach(e => e.style.border = '1px solid red');
+        errColor.forEach(e => e.style.outline = '1px solid red');
     }
 
     else {
         passwordErrorMessage.textContent = '';
+        errColor.forEach(e => e.style.border = '1px solid green');
+        errColor.forEach(e => e.style.outline = '1px solid green');
     }
 }
 
-sendErrorMsg();
-matchPwords();
+sendErrorMsg(); // Sends the error on load
 
 
-pword1.addEventListener('focus', () => {
+pword1.addEventListener('keyup', () => {
     sendErrorMsg()
 });
 
-pword2.addEventListener('focus', () => {
+
+pword2.addEventListener('keyup', () => {
     sendErrorMsg()
 });
+ 
