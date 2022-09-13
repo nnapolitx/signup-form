@@ -33,17 +33,17 @@
                     <p>
                         <span>
                             <label for="first-name">FIRST NAME</label>
-                            <input type="text" id="first-name" name="first-name" placeholder="Thor">
+                            <input type="text" id="first-name" name="first-name" placeholder="Thor" required>
                         </span>
                         <span>
                             <label for="last-name">LAST NAME</label>
-                            <input type="text" id="last-name" name="last-name" placeholder="Odinson">
+                            <input type="text" id="last-name" name="last-name" placeholder="Odinson" required>
                         </span>
                     </p>
                     <p>
                         <span>
                             <label for="email">EMAIL</label>
-                            <input type="email" id="email" name="email" placeholder="thor@odin.com">
+                            <input type="email" id="email" name="email" placeholder="thor@odin.com" required>
                         </span>
                         <span>
                             <label for="phone">PHONE NUMBER</label>
@@ -53,12 +53,12 @@
                     <p>
                         <span>
                             <label for="pword">PASSWORD</label>
-                            <input type="password" id="pword" name="pword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="error">
+                            <input type="password" id="pword" name="pword" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="error" required>
                             <label for="pword">(minimum 8 characters, upper and lowercase, and at least 1 number)</label>
                         </span>
                         <span>
                             <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm" name="confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="error">
+                            <input type="password" id="confirm" name="confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="error" required>
                             <label for="confirm" class="unmatched-pword"></label>
                         </span>
                     </p>
