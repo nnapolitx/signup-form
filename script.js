@@ -10,6 +10,13 @@ function matchPwords () {
         return 'blank';
     }
 
+    else if (pword1.textContent === pword2.textContent) {
+        return true;
+    }
+
+    else if (pword1.textContent !== pword2.textContent) {
+        return false;
+    }
 }
 
 
@@ -18,7 +25,7 @@ function sendErrorMsg () {
         passwordErrorMessage.textContent = 'Please enter a valid password';
     }
 
-    else if (matchPwords === false) {
+    else if (matchPwords() === false) {
         passwordErrorMessage.textContent = 'Passwords do not match';
     }
 
@@ -28,3 +35,5 @@ function sendErrorMsg () {
 }
 
 sendErrorMsg();
+matchPwords();
+
