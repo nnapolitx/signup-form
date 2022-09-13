@@ -126,7 +126,7 @@ form {
 
 input {
   width: 250px;
-  border: 1px solid hsla(0, 0%, 0%, 0.30);
+  border: 1px solid hsl(220, 13%, 91%);
   border-radius: 4px;
   padding: 4px;
   font-size: 1rem;
@@ -136,6 +136,8 @@ label {
   letter-spacing: 1.5px;
   font-size: .7rem;
   font-weight: 600;
+  color: hsla(0, 0%, 0%, 0.90);
+  max-width: 250px;
 }
 
 form p {
@@ -159,7 +161,7 @@ span {
 .shadow {
   padding: 1em 2em 4em 48px;
   background-color: white;
-  box-shadow: 0px 4px hsla(0, 0%, 0%, 0.10);
+  box-shadow: 0px 5px 5px 0px hsla(0, 0%, 0%, 0.10);
   width: 100%;
   margin-bottom: 2em;
 }
@@ -183,6 +185,11 @@ button {
 }
 
 .bottom-content a{
+  /*Still need to remove underline*/
   color: #596D48;
-  
+}
+
+input:focus {
+  border: 1px solid #596D48;
+  outline: 1px solid #596D48;
 }
