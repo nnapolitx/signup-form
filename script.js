@@ -37,3 +37,11 @@ function sendErrorMsg () {
 sendErrorMsg();
 matchPwords();
 
+
+pword1.addEventListener('focus', () => {
+    sendErrorMsg()
+});
+
+pword2.addEventListener('focus', () => {
+    sendErrorMsg()
+});
