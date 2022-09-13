@@ -185,11 +185,17 @@ button {
 }
 
 .bottom-content a{
-  /*Still need to remove underline*/
+  text-decoration: none;
   color: #596D48;
+  font-weight: bolder;
 }
 
 input:focus {
   border: 1px solid #596D48;
   outline: 1px solid #596D48;
+  box-shadow: 2px 5px 4px 4px hsla(0, 0%, 0%, 0.10);
+}
+
+.unmatched-pword {
+  color: red;
 }

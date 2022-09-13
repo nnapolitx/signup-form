@@ -47,7 +47,7 @@
                         </span>
                         <span>
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="text" id="phone" name="phone" placeholder="867-5309">
+                            <input type="tel" id="phone" name="phone" placeholder="(123)-867-5309">
                         </span>
                     </p>
                     <p>
@@ -58,7 +58,8 @@
                         </span>
                         <span>
                             <label for="confirm">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirm" name="confirm" class="error">
+                            <input type="password" id="confirm" name="confirm" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" class="error">
+                            <label for="confirm" class="unmatched-pword"></label>
                         </span>
                     </p>
                 </div>
