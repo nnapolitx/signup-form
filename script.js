@@ -3,19 +3,19 @@ const errorInputBorder = document.querySelectorAll('.error');
 const pword1 = document.querySelector('#pword');
 const pword2 = document.querySelector('#confirm');
 
-console.log(pword1.textContent, pword2.textContent);
+console.log(pword1.value, pword2.value);
 
 function matchPwords () {
-    if (pword1.textContent === '' && pword2.textContent === '') {
+    if (pword1.value !== pword2.value) {
+        return false;
+    }
+
+    else if (pword1.value === '' && pword2.value === '') {
         return 'blank';
     }
 
-    else if (pword1.textContent === pword2.textContent) {
+    else if (pword1.value === pword2.value) {
         return true;
-    }
-
-    else if (pword1.textContent !== pword2.textContent) {
-        return false;
     }
 }
 
@@ -25,7 +25,7 @@ function sendErrorMsg () {
         passwordErrorMessage.textContent = 'Please enter a valid password';
     }
 
-    else if (matchPwords() === false) {
+    else if (matchPwords() == false) {
         passwordErrorMessage.textContent = 'Passwords do not match';
     }
 
